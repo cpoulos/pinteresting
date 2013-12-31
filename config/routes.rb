@@ -1,4 +1,6 @@
 Omrails4::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   get "contact" => "pages#contact"
   root "pages#home"
